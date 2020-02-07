@@ -13,5 +13,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         mBookViewModel = ViewModelProviders.of(this).get(BookViewModel::class.java)
+
+        initView()
+    }
+
+    fun initView() {
+
     }
 }

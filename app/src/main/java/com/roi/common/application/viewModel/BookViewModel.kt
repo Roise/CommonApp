@@ -3,11 +3,12 @@ package com.roi.common.application.viewModel
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
+import com.roi.common.application.BaseKotlinViewModel
 import com.roi.common.application.model.BookDto
 import com.roi.common.application.network.BookRepository
 import io.reactivex.disposables.CompositeDisposable
 
-class BookViewModel(application: Application) : AndroidViewModel(application) {
+class BookViewModel(application: Application) : BaseKotlinViewModel(application) {
     private var repository: BookRepository
     private val disposable: CompositeDisposable
 
